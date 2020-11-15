@@ -1,2 +1,8 @@
-# catch-em-all
-A way to kind of escape to the async/await hell
+## Usage
+
+```js
+const { catchEmAll } = require('@kznjunk/catch-em-all')
+
+const [ error, data ] = await catchEmAll(sendEmail('Pika Pika'))
+if (!data) console.log(error)
+```
